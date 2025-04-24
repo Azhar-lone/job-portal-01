@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const StorySection = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2">
