@@ -70,6 +70,6 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { name: "Home", href: "/" },
   { name: "Jobs", href: "/jobs" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Contact Us", href: "/contact-us" },
+  { name: "About Us", href: "/about" },
+  { name: "Contact Us", href: "/contact" },
 ];

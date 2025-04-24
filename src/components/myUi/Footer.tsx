@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer  className="bg-background  p-8 z-40 flex flex-col gap-2 ">
       <div className="max-w-[1440px] mx-auto   ">
-        <div className=" flex items-start  justify-between border-b   p-2 border-foreground">
-          <div className="flex flex-col text-foreground gap-4   w-1/4   ">
+        <div className=" flex items-start flex-col md:flex-row justify-between border-b gap-5   p-2 border-foreground">
+          <div className="flex flex-col text-foreground gap-4   md:w-1/4  w-full ">
             <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2   ">
               <ShoppingBagIcon /> Job
             </h3>
@@ -18,7 +18,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col  w-1/5 text-foreground  ">
+          <div className="flex flex-col  md:w-1/5  w-full text-foreground  ">
             <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2">
               Company
             </h3>
@@ -31,7 +31,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col  w-1/5  text-foreground ">
+          <div className="flex flex-col  md:w-1/5  w-full  text-foreground ">
             <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2">
               Job Categories
             </h3>
@@ -45,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col text-foreground w-1/5  gap-3 ">
+          <div className="flex flex-col text-foreground md:w-1/5  w-full  gap-3 ">
             <h3 className="text-xl font-semibold text-foreground flex ">
               Newsletter
             </h3>
