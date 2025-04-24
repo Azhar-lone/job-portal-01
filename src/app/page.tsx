@@ -1,7 +1,11 @@
-// import OrderSection from "./_components/Order";
+import Hero from "./_home_sections/Hero";
 
 const Home = () => {
-  return <div>This is Home</div>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default Home;

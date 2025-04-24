@@ -5,7 +5,10 @@ import { ShoppingBagIcon } from "lucide-react";
 import { Button } from "../ui/button";
 
 import { ModeToggle } from "./mode-toggle";
+import { usePathname } from "next/navigation";
 const Header = () => {
+  const path = usePathname();
+
   return (
     <header className="fixed top-0 left-0 right-0 text-background bg-foreground shadow-lg z-50">
       <div className="max-w-[1440px] mx-auto flex justify-around items-center py-4 px-2 ">
@@ -22,7 +25,7 @@ const Header = () => {
               key={link.href}
               href={link.href}
               className={`  text-background/60 ${
-                link.href === "test"
+                path.split("/").includes(link.href)
                   ? " text-background "
                   : " hover:text-background "
               }   transition duration-300 px-3 py-2 rounded-lg`}
@@ -53,7 +56,7 @@ interface NavLink {
 const nanLinks: NavLink[] = [
   {
     name: "Home",
-    href: "/home",
+    href: "/",
   },
   {
     name: "Jobs",

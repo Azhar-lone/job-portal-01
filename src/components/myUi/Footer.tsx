@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground  p-8 -z-40 flex flex-col gap-2 ">
+    <footer className="bg-foreground  p-8 z-40 flex flex-col gap-2 ">
       <div className="max-w-[1440px] mx-auto   ">
         <div className=" flex items-start  justify-between border-b   p-2 border-background">
           <div className="flex flex-col text-background gap-4   w-1/4   ">
