@@ -1,123 +1,77 @@
+import { ShoppingBagIcon } from "lucide-react";
+import Link from "next/link";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+
 const Footer = () => {
   return (
-    <footer className="bg-background  py-8 -z-40">
-      <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <div>
-          <h3 className="text-xl font-bold text-secondary-foreground mb-4">Our Branches</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-                <i className="fas fa-map-marker-alt mr-2"></i>City 1
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-                <i className="fas fa-map-marker-alt mr-2"></i>City 2
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-                <i className="fas fa-map-marker-alt mr-2"></i>City 3
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-                <i className="fas fa-map-marker-alt mr-2"></i>City 4
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-secondary-foreground mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#home" className="text-secondary-foreground/50 hover:text-sunset">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#dishes" className="text-secondary-foreground/50 hover:text-sunset">
-                Dishes
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="text-secondary-foreground/50 hover:text-sunset">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#menu" className="text-secondary-foreground/50 hover:text-sunset">
-                Menu
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-secondary-foreground mb-4">Contact Us</h3>
-          <ul className="space-y-2">
-            <li>
-              <a
-                href="tel:+123 456 789101"
-                className="text-secondary-foreground/50 hover:text-sunset"
-              >
-                <i className="fas fa-phone mr-2"></i>+123 456 789101
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:info@biteanddine.com"
-                className="text-secondary-foreground/50 hover:text-sunset"
-              >
-                <i className="fas fa-envelope mr-2"></i>info@TastyCornerCafe.com
-              </a>
-            </li>
-            <li>
-              <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-                <i className="fas fa-map mr-2"></i>69/a, ABCadsg, City 1234
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-bold text-secondary-foreground mb-4">
-            Connect with Us
-          </h3>
-          <div className="flex space-x-4">
-            <a
-              href="#"
-              className="w-8 h-8 bg-sunset text-white rounded-full flex items-center justify-center hover:bg-jellyBeanBlue"
-            >
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 bg-sunset text-white rounded-full flex items-center justify-center hover:bg-jellyBeanBlue"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a
-              href="#"
-              className="w-8 h-8 bg-sunset text-white rounded-full flex items-center justify-center hover:bg-jellyBeanBlue"
-            >
-              <i className="fab fa-instagram"></i>
-            </a>
+    <footer className="bg-foreground  p-8 -z-40 flex flex-col gap-2 ">
+      <div className="max-w-[1440px] mx-auto   ">
+        <div className=" flex items-start  justify-between border-b   p-2 border-background">
+          <div className="flex flex-col text-background gap-4   w-1/4   ">
+            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2   ">
+              <ShoppingBagIcon /> Job
+            </h3>
+            <p>
+              Job Quis enim pellentesque viverra tellus eget malesuada
+              facilisis. Congue nibh vivamus aliquet nunc mauris dui nullam et.
+            </p>
+          </div>
+
+          <div className="flex flex-col  w-1/5 text-background  ">
+            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2">
+              Company
+            </h3>
+            <ul className="flex flex-col gap-2 flex-wrap">
+              <Link href={"#"}>About Us</Link>
+              <Link href={"#"}>Our Team </Link>
+              <Link href={"#"}> Partners </Link>
+              <Link href={"#"}> For Candidates </Link>
+              <Link href={"#"}> For Employers</Link>
+            </ul>
+          </div>
+
+          <div className="flex flex-col  w-1/5  text-background ">
+            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2">
+              Job Categories
+            </h3>
+
+            <ul className="flex flex-col gap-2 ">
+              <Link href={"#"}>Telecomunications</Link>
+              <Link href={"#"}>Hotels & Tourism </Link>
+              <Link href={"#"}> Construction </Link>
+              <Link href={"#"}> Education </Link>
+              <Link href={"#"}> Financial Services</Link>
+            </ul>
+          </div>
+
+          <div className="flex flex-col text-background w-1/5  gap-3 ">
+            <h3 className="text-xl font-semibold text-background flex ">
+              Newsletter
+            </h3>
+            <p className="text-background/80">
+              Eu nunc pretium vitae platea. Non netus elementum vulputate
+            </p>
+            <Input placeholder="Email Address" />
+
+            <Button className="py-5 text-lg">Subscribe now</Button>
           </div>
         </div>
-      </div>
-      <div className="mt-8 border-t pt-4 flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto px-4">
-        <p className="text-secondary-foreground/50">
-          © 2025 TastyCornerCafe. All rights reserved.
-        </p>
-        <div className="flex space-x-4">
-          <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-            Privacy Policy
-          </a>
-          <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-            Terms of Service
-          </a>
-          <a href="#" className="text-secondary-foreground/50 hover:text-sunset">
-            Cookie Policy
-          </a>
+        <div className="text-background flex justify-between p-2 items-center">
+          <h1 className="text-background/70">
+            © Copyright Job Portal 2025.{" "}
+            <Link
+              className="hover:text-primary"
+              href={"https://azhar-lone-portfolio.vercel.app/"}
+              target="_blank"
+            >
+              @Azhar Lone
+            </Link>
+          </h1>
+          <div className="flex gap-2 items-center">
+            <h5>Privacy Policy</h5>
+            <h5>Terms & Conditions</h5>
+          </div>
         </div>
       </div>
     </footer>
