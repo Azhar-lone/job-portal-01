@@ -5,11 +5,11 @@ import { Input } from "../ui/input";
 
 const Footer = () => {
   return (
-    <footer className="bg-foreground  p-8 z-40 flex flex-col gap-2 ">
+    <footer  className="bg-background  p-8 z-40 flex flex-col gap-2 ">
       <div className="max-w-[1440px] mx-auto   ">
-        <div className=" flex items-start  justify-between border-b   p-2 border-background">
-          <div className="flex flex-col text-background gap-4   w-1/4   ">
-            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2   ">
+        <div className=" flex items-start  justify-between border-b   p-2 border-foreground">
+          <div className="flex flex-col text-foreground gap-4   w-1/4   ">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2   ">
               <ShoppingBagIcon /> Job
             </h3>
             <p>
@@ -18,8 +18,8 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex flex-col  w-1/5 text-background  ">
-            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2">
+          <div className="flex flex-col  w-1/5 text-foreground  ">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2">
               Company
             </h3>
             <ul className="flex flex-col gap-2 flex-wrap">
@@ -31,8 +31,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col  w-1/5  text-background ">
-            <h3 className="text-xl font-semibold text-background mb-4 flex gap-2">
+          <div className="flex flex-col  w-1/5  text-foreground ">
+            <h3 className="text-xl font-semibold text-foreground mb-4 flex gap-2">
               Job Categories
             </h3>
 
@@ -45,11 +45,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col text-background w-1/5  gap-3 ">
-            <h3 className="text-xl font-semibold text-background flex ">
+          <div className="flex flex-col text-foreground w-1/5  gap-3 ">
+            <h3 className="text-xl font-semibold text-foreground flex ">
               Newsletter
             </h3>
-            <p className="text-background/80">
+            <p className="text-foreground/80">
               Eu nunc pretium vitae platea. Non netus elementum vulputate
             </p>
             <Input placeholder="Email Address" />
@@ -57,8 +57,8 @@ const Footer = () => {
             <Button className="py-5 text-lg">Subscribe now</Button>
           </div>
         </div>
-        <div className="text-background flex justify-between p-2 items-center">
-          <h1 className="text-background/70">
+        <div className="text-foreground flex justify-between p-2 items-center">
+          <h1 className="text-foreground/70">
             © Copyright Job Portal 2025.{" "}
             <Link
               className="hover:text-primary"
