@@ -75,7 +75,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-2">Foster Growth</h3>
                 <p className="text-muted-foreground">
-                  We help businesses find the talent they need to innovate and grow in today's competitive market.
+                  We help businesses find the talent they need to innovate and grow in today&aposs competitive market.
                 </p>
               </CardContent>
             </Card>
@@ -221,7 +221,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Join Our Community?</h2>
           <p className="mb-8 max-w-2xl mx-auto">
-            Whether you're looking for your next career move or searching for top talent, JobPortal is here to help you
+            Whether you&aposre looking for your next career move or searching for top talent, JobPortal is here to help you
             succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -45,7 +45,7 @@ export function MissionSection() {
               </div>
               <h3 className="text-xl font-bold mb-2">Foster Growth</h3>
               <p className="text-muted-foreground">
-                We help businesses find the talent they need to innovate and grow in today's competitive market.
+                We help businesses find the talent they need to innovate and grow in today&aposs competitive market.
               </p>
             </CardContent>
           </Card>
