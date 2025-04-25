@@ -57,8 +57,8 @@ const Footer = () => {
             <Button className="py-5 text-lg">Subscribe now</Button>
           </div>
         </div>
-        <div className="text-foreground flex justify-between p-2 items-center">
-          <h1 className="text-foreground/70">
+        <div className="text-foreground flex flex-col md:flex-row justify-between p-2 items-center gap-2">
+          <h1 className="text-foreground/70 text-sm flex gap-2">
             © Copyright Job Portal 2025.{" "}
             <Link
               className="hover:text-primary"

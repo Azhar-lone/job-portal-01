@@ -1,22 +1,17 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Search, Calendar, User, Tag } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Search, Calendar, User, Tag } from "lucide-react";
+import TagComp from "#/src/components/myUi/Tag";
+import Hero from "./_sections/Hero";
 
 export default function BlogPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-primary-light py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">News and Blog</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay updated with the latest career advice, industry trends, and company news.
-          </p>
-        </div>
-      </section>
+      <Hero />
 
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -51,8 +46,12 @@ export default function BlogPage() {
                               {post.category}
                             </div>
                           </div>
-                          <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                          <p className="text-muted-foreground mb-4">{post.excerpt}</p>
+                          <h2 className="text-xl font-bold mb-2">
+                            {post.title}
+                          </h2>
+                          <p className="text-muted-foreground mb-4">
+                            {post.excerpt}
+                          </p>
                           <Link href={`/blog/${post.slug}`}>
                             <Button variant="outline">Read More</Button>
                           </Link>
@@ -69,7 +68,11 @@ export default function BlogPage() {
                   <Button variant="outline" size="sm" disabled>
                     Previous
                   </Button>
-                  <Button variant="outline" size="sm" className="bg-primary text-white">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="bg-primary text-white"
+                  >
                     1
                   </Button>
                   <Button variant="outline" size="sm">
@@ -116,7 +119,9 @@ export default function BlogPage() {
                           className="flex items-center justify-between hover:text-primary transition-colors"
                         >
                           <span>{category.name}</span>
-                          <span className="text-muted-foreground text-sm">{category.count}</span>
+                          <span className="text-muted-foreground text-sm">
+                            {category.count}
+                          </span>
                         </Link>
                       </li>
                     ))}
@@ -140,8 +145,12 @@ export default function BlogPage() {
                           />
                         </div>
                         <div>
-                          <h4 className="font-medium text-sm line-clamp-2">{post.title}</h4>
-                          <p className="text-xs text-muted-foreground">{post.date}</p>
+                          <h4 className="font-medium text-sm line-clamp-2">
+                            {post.title}
+                          </h4>
+                          <p className="text-xs text-muted-foreground">
+                            {post.date}
+                          </p>
                         </div>
                       </div>
                     ))}
@@ -155,13 +164,7 @@ export default function BlogPage() {
                   <h3 className="font-bold text-lg mb-4">Tags</h3>
                   <div className="flex flex-wrap gap-2">
                     {tags.map((tag, index) => (
-                      <Link
-                        key={index}
-                        href="#"
-                        className="px-3 py-1 bg-gray-100 rounded-full text-sm hover:bg-primary hover:text-white transition-colors"
-                      >
-                        {tag}
-                      </Link>
+                      <TagComp key={index}>{tag}</TagComp>
                     ))}
                   </div>
                 </CardContent>
@@ -171,7 +174,7 @@ export default function BlogPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
 
 const blogPosts = [
@@ -211,7 +214,7 @@ const blogPosts = [
     category: "Career Development",
     slug: "career-changes",
   },
-]
+];
 
 const categories = [
   { name: "Career Advice", count: 24 },
@@ -220,14 +223,17 @@ const categories = [
   { name: "Workplace Trends", count: 12 },
   { name: "Job Search Strategies", count: 20 },
   { name: "Career Development", count: 16 },
-]
+];
 
 const recentPosts = [
   { title: "10 Tips for a Successful Job Interview", date: "April 15, 2023" },
   { title: "How to Create a Resume That Gets Noticed", date: "March 28, 2023" },
-  { title: "The Future of Remote Work: Trends to Watch", date: "March 15, 2023" },
+  {
+    title: "The Future of Remote Work: Trends to Watch",
+    date: "March 15, 2023",
+  },
   { title: "Navigating Career Changes in 2023", date: "February 22, 2023" },
-]
+];
 
 const tags = [
   "Career Advice",
@@ -242,4 +248,4 @@ const tags = [
   "Work-Life Balance",
   "Career Change",
   "Professional Growth",
-]
+];
