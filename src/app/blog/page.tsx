@@ -7,6 +7,11 @@ import { Search, Calendar, User, Tag } from "lucide-react";
 import TagComp from "#/src/components/myUi/Tag";
 import Hero from "./_sections/Hero";
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Contact us",
+};
+
 export default function BlogPage() {
   return (
     <div>
