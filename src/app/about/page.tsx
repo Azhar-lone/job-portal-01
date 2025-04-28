@@ -6,6 +6,12 @@ import TeamSection from "./_sections/team-section";
 import StatsSection from "./_sections/stats-section";
 import { CtaSection } from "../_home_sections/cta-section";
 
+
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "About us",
+};
+
 export default function AboutPage() {
   return (
     <div>
