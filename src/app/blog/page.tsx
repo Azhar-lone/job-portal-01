@@ -9,7 +9,7 @@ import Hero from "./_sections/Hero";
 
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Contact us",
+  title: "Blogs",
 };
 
 export default function BlogPage() {
