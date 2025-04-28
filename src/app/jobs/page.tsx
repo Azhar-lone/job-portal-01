@@ -1,6 +1,11 @@
 import { JobsHeader } from "./_sections/jobs-header"
 import { JobsContent } from "./_sections/jobs-content"
 
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Jobs",
+};
+
 export default function JobsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
