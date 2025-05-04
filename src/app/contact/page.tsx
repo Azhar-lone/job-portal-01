@@ -1,5 +1,3 @@
-"use client";
-
 import type React from "react";
 import Hero from "./_sections/hero";
 import ContactForm from "./_sections/contact-info-form";
